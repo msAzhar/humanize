@@ -37,6 +37,7 @@ Default values can be overriden:
 ```ruby
 42.humanize(locale: :fr) # => "quarante-deux"
 1666.humanize(locale: :tr) # => "bin altı yüz altmış altı"
+33.humanize(locale: :ru) # => "тридцать три"
 ```
 
 ## Decimals
@@ -50,7 +51,7 @@ You can choose how you want to display decimals:
 
 ## I18n
 
-Currently supported locales: `:en`,`:fr` and `:tr`
+Currently supported locales: `:en`, `:fr`, `:tr` and `:ru`
 
 ## Benchmarks
 

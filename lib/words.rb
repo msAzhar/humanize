@@ -18,8 +18,15 @@ WORDS = {
   :tr => {
     :negative => 'eksi',
     :zero => 'sıfır',
-    :point => 'virgül',
+    :point => 'nokta',
     :and => '',
-    :comma => ''
+    :comma => ','
+  },
+  :ru => {
+    :negative => 'минус', #отриц. число
+    :zero => 'ноль',
+    :point => 'целых',
+    :and => 'и',
+    :comma => ','
   }
 }

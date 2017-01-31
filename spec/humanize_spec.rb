@@ -59,6 +59,22 @@ describe "Humanize" do
 
     end
 
+   describe 'russian specific rules' do
+
+      it 'one thousand and two equals "одна тысяча два"' do
+        expect(1002.humanize(:locale => :ru)).to eql('одна тысяча два')
+      end
+
+      it 'two thousand and one equals "две тысяча один"' do
+        expect(2001.humanize(:locale => :ru)).to eql('две тысяча один')
+      end
+
+      it 'ten thousand equals "десять тысяч"' do
+        expect(10000.humanize(:locale => :ru)).to eql('десять тысяч')
+      end
+
+    end
+
   end
 
   describe 'decimals_as option' do
